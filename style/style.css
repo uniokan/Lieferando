@@ -1,0 +1,524 @@
+:root {
+    --main-color: rgb(248, 245, 243);
+}
+
+@keyframes show-animation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.basket-animation {
+    animation: show-animation 1s linear;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-distance {
+    margin: 2% 5%;
+}
+
+.header-left img {
+    height: 30px;
+    margin-right: 8px;
+}
+
+.homepage-de {
+    font-weight: 50px !important;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.header-left:hover {
+    color: black;
+    transition: transform 225ms ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 127, 1);
+    padding: 1% 3%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header-location {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 4px;
+    margin-top: 4px;
+    border-bottom: 1px solid white;
+}
+
+.main-content-left {
+    width: 75%;
+    overflow: hidden;
+}
+
+.img-container img {
+    margin-top: 4.5%;
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+}
+
+.logo-container img {
+    height: 100px;
+}
+
+.shop-describe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-btn {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-container {
+    max-width: 100px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 100%;
+    margin-top: -100px;
+}
+
+.shop-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.like-btn img {
+    height: 20px;
+    margin-top: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.like-btn span {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2px 14px;
+    border-radius: 4px;
+}
+
+.menu-img-right {
+    height: 16px;
+    position: fixed;
+    right: 0;
+}
+
+.menu-img img {
+    cursor: pointer;
+}
+
+
+.menu-container {
+    padding: 24px 16px;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides-container {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+}
+
+.slides-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.reviews-container img {
+    height: 16px;
+}
+
+.reviews-container span {
+    color: rgb(255, 127, 1);
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.popular-dishes {
+    background-color: var(--main-color);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.select-dish {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 32px;
+    position: relative;
+    border-radius: 16px;
+}
+
+.select-dish img {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 16px;
+
+}
+
+.select-dish img:hover {
+    transform: scale(1.07);
+}
+
+.main-content {
+    display: flex;
+    margin-bottom: 200px;
+
+}
+
+#main-content-right {
+    height: 100vh;
+    margin-top: 69px;
+    padding-bottom: 100px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: unset;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    background-color: white;
+}
+
+.basket-title-container img {
+    height: 56px;
+    width: 56px;
+}
+
+.basket-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    margin-top: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.basket-title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 24px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.price-basket {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 24px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sum,
+.price {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+.basket-title-container-width {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.black-color {
+    color: black;
+}
+
+.delivery-condition {
+    padding: 0 16px;
+
+}
+
+.order-btn {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px 0;
+    background-color: #d6d6d6;
+    border: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: rgb(255, 127, 1);
+    transition: all 225ms ease-in-out;
+}
+
+.main-color {
+    color: rgb(255, 127, 1)
+}
+
+
+.selected-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected-dish-width {
+    width: 150px;
+    text-align: center;
+}
+
+.selected-dish {
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.plus-border {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-right: 8px;
+}
+
+
+.plus-border:hover {
+    transition: all 225ms ease-in-out;
+    background-color: rgb(255, 127, 1);
+    color: black;
+}
+
+.new-price {
+    width: 60px;
+    margin-right: 8px;
+}
+
+.green {
+    color: green;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    padding: 16px 24px;
+    position: fixed;
+    z-index: 5;
+    height: 44px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.imprint {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.imprint a,
+.footer-icons-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.plus-border:hover,
+.trash-icon img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.trash-icon img {
+    height: 20px;
+}
+
+.menu-container-extra {
+    display: flex;
+    gap: 2%;
+
+}
+
+.move-menu-right {
+    transform: translateX(-30%);
+    transition: transform 1s ease-in-out;
+}
+
+.move-menu-left {
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+}
+
+.menu-container img {
+    height: 30px;
+}
+
+.d-none-arrow {
+    display: none
+}
+
+.basket-btn-responsive {
+    cursor: pointer;
+    padding: 8px 40px;
+    color: white;
+    background-color: rgb(255, 127, 1);
+    border: unset;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px 0 40px 0;
+    border-radius: 16px;
+}
+
+.basket-btn-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-bottom: 100px;
+    opacity: 80%;
+}
+
+.basket-btn-responsive:hover {
+    color: black;
+    transition: all 225ms ease-in-out;
+}
+
+.close-responsive-basket {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.header-icon img {
+    height: 28px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.footer-icons-logo img {
+    height: 40px;
+    width: 40px;
+    padding-left: 16px;
+}
+
+.footer-icons-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-icons img {
+    height: 30px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-icons img:hover,
+.menu-img img:hover,
+#close-otherDishes:hover,
+.impressum a:hover {
+    transform: scale(1.07);
+    transition: transform 225ms ease-in-out;
+    cursor: pointer;
+}
+
+.imprint span:hover,
+.footer-icons-logo span:hover,
+#close-basket-responsive:hover,
+.slides-container a:hover {
+    transition: all 225ms ease-in-out;
+    color: rgb(255, 127, 1);
+    cursor: pointer;
+}
+
+.impressum {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.impressum a {
+    text-decoration: none;
+    color: rgb(255, 127, 1);
+}

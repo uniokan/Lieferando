@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="shortcut icon" href="../img/fork.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+</head>
+
+<body id="body" onload="renderMenuOnPosition(4)">
+    <header>
+        <a href="index.html">
+            <div class="header-left">
+                <img src="../img/fork.png">
+                <span>Lieferando</span><span class="homepage-de">.de</span>
+            </div>
+        </a>
+
+        <div class="header-location">
+            <span>Lilienstraße 3, Leipzig</span>
+        </div>
+        <div class="header-icon">
+            <img src="../img/deutschland.png" alt="Deutschland-Flagge">
+        </div>
+    </header>
+
+    <div class="main-content" >
+        <div class="main-content-left">
+            <div class="img-container">
+                <img src="../img/pizza.jpg">
+            </div>
+            <div>
+                <div class="shop-describe body-distance">
+                    <div class="shop-name-container">
+                        <span class="shop-name">Croccante Restaurant</span>
+                        <div class="reviews-container">
+                            <img src="../img/star.png">
+                            <img src="../img/star.png">
+                            <img src="../img/star.png">
+                            <img src="../img/star.png">
+                            <img src="../img/star.png">
+                            <span>(513 Bewertungen)</span>
+                        </div>
+                    </div>
+                    <div class="logo-container">
+                        <img src="../img/pizza-logo.png">
+                    </div>
+                    <div class="like-btn">
+                        <div>
+                            <span class="info-btn">i</span>
+                        </div>
+                        <div>
+                            <img src="../img/herz.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-container " id="menu-container">
+                    <div class="slides-container" id="slide-container">
+                        <img src="../img/search-icon.png">
+                        <div class="menu-img d-none-arrow"><img id="open-otherDishes" onclick="openOtherDishesInMenu()"
+                                src="../img/arrow-left.png"></div>
+                        <a href="salad.html"><span>Salate</span></a>
+                        <a href="pizza.html"><span>Pizza</span></a>
+                        <a href="pizza.html"><span>Pizzabrot</span></a>
+                        <a href="pasta.html"><span>Pasta Classic</span></a>
+                        <a href="pasta-napoli.html"><span>Pasta Napoli</span></a>
+                        <a href="pasta-carbonara.html"><span>Pasta Carbonara</span></a>
+                        <a href="noodle.html"><span>Nudeln</span></a>
+                        <a href="beverages.html"><span>Alkoholfreie Getränke</span></a>
+                        <a href="desserts.html"><span>Desserts</span></a>
+                        <a href="burger.html"><span>XXL Burger</span></a>
+                        <img class="d-none-arrow" id="close-otherDishes" onclick="closeOtherDishesInMenu()"
+                            src="../img/arrow-right.png">
+                    </div>
+
+
+                </div>
+
+                <div id="select-dish-container">
+
+                </div>
+                <div class="basket-btn-container" id="basket-btn-container">
+                    <button id="open-basket-responsive" onclick="openBasketResponsive()"
+                        class="basket-btn-responsive d-none">Warenkorb ansehen <span id="price-basket"></span></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main-content-right">
+            <div class="basket-title-container-width">
+                <div class="basket-title">
+                    <span> Warenkorb </span>
+                    <span id="close-basket-responsive" onclick="closeBasketResponsive()"
+                        class="close-responsive-basket d-none">X</span>
+                </div>
+                <div class="basket-title-container" id='dish-field'>
+                    <img src="../img/korb.png" alt="Warenkorb">
+                    <span> Wähle leckere Gerichte aus der Karte </span>
+                    <span>und bestelle dein Menü</span>
+                </div>
+                <div class="selected-dish" id="selected-dish">
+
+                </div>
+
+                <div class="price-basket">
+                    <div class="sum">
+                        <span>Zwischensumme:</span>
+                        <span id="delivery-costs" class="green d-none">Lieferkosten:</span>
+                        <span class="bold black-color">Gesamt:</span>
+                    </div>
+                    <div class="price">
+                        <span id="subtotal">0,00€</span>
+                        <span id="delivery-costs-price" class="green d-none">4.95€</span>
+                        <span id="total-sum" class="bold black-color">0,00€</span>
+                    </div>
+                </div>
+                <div class="delivery-condition">
+                    <p> Croccante Restaurant liefert erst ab einem Mindestbestelltwert von 20,00 € (exkl. Lieferkosten)!
+                    </p>
+
+                    <button onclick="minimumOrderValueCheck()" class="order-btn">Bestellen</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="imprint">
+            <a href="datenschutz.html"><span>Datenschutz</span></a>
+            <a href="imprint.html"><span>Impressum</span></a>
+        </div>
+        <div class="footer-icons-logo">
+            <img src="../img/fork.png">
+            <a href="index.html"><span>Lieferando</span></a>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/accounts/login/"><img src="../img/instagram.png" alt="Instagram-logo"></a>
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="Facebook-logo"></a>
+            <a href="https://twitter.com/?lang=de"><img src="../img/twitter.png" alt="Twitter-logo"></a>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/localstorage.js"></script>
+    <script src="../script/template.js"></script>
+</body>
+
+</html>
